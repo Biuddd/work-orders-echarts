@@ -18,7 +18,7 @@
           <a-table
               :data-source="dataSource"
               :columns="columns"
-              :row-key="record => record.id"
+              :row-key="(record: any) => record.id"
               :pagination="{ pageSize: 5 }"
               size="middle"
           />
